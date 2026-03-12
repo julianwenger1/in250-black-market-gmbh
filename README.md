@@ -18,4 +18,4 @@ Willkommen im offiziellen Entwicklungs-Repository der Black Market Software GmbH
 - [x] Aufgabe 8: Branching-Strategie definieren
 - [x] Aufgabe 9: Merge-Konflikt lösen
 - [x] Aufgabe 10: Github Pages einrichten
-- [ ] Aufgabe 11: Abschluss und Security
+- [x] Aufgabe 11: Abschluss und Security
