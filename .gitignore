@@ -1,0 +1,6 @@
+# secrets and sensitive data
+.idea
+secrets/
+KREDITKARTEN.txt
+secret.json
+secret.yml
