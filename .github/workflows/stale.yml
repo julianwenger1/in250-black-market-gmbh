@@ -1,0 +1,21 @@
+name: Fluch der Vergaenglichkeit (Stale Action)
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-stale: 30
+          days-before-close: 7
+          stale-issue-message: 'Dieses Issue wurde vom Fluch der Vergänglichkeit erfasst und als veraltet (stale) markiert, da es seit 30 Tagen keine Aktivitaet gab. Es wird in 7 Tagen automatisch ins Schattenreich verbannt (geschlossen), falls niemand mehr antwortet.'
+          stale-pr-message: 'Dieser Pull Request wurde als veraltet (stale) markiert, da er 30 Tage lang unberuehrt blieb. Er wird in 7 Tagen geschlossen, wenn keine weiteren Updates erfolgen.'
+          stale-issue-label: 'stale'
+          stale-pr-label: 'stale'

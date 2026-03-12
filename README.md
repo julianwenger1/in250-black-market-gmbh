@@ -11,8 +11,8 @@ Willkommen im offiziellen Entwicklungs-Repository der Black Market Software GmbH
 - [x] Aufgabe 3: Repository Setup
 - [x] Aufgabe 4: Dokumentation und Verzeichnisstruktur
 - [x] Aufgabe 5: Hauptseite erstellen
-- [ ] Aufgabe 6: Ignoranz
-- [ ] Aufgabe 7: Automatisierung
+- [x] Aufgabe 6: Ignoranz
+- [x] Aufgabe 7: Automatisierung
 - [ ] Aufgabe 8: Branching-Strategie definieren
 - [ ] Aufgabe 9: Merge-Konflikt lösen
 - [ ] Aufgabe 10: Github Pages einrichten
