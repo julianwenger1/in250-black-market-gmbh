@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Market Software GmbH</title>
+    <style>
+        :root {
+            --primary-color: #ff003c;
+            --bg-color: #0d0d0d;
+            --text-color: #e0e0e0;
+            --accent-color: #00ffcc;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(20, 20, 20, 0.9);
+            border: 1px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 60, 0.2);
+            position: relative;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .feature-box {
+            background: #1a1a1a;
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            width: 30%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 255, 204, 0.2);
+        }
+
+        .feature-title {
+            color: var(--accent-color);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .glitch {
+            position: relative;
+        }
+        .glitch::before, .glitch::after {
+            content: "BLACK MARKET SOFTWARE";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+        }
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 var(--accent-color);
+            animation: glitch-anim-1 2s infinite linear alternate-reverse;
+        }
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 var(--primary-color);
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim-1 {
+            0% { clip-path: inset(20% 0 80% 0); }
+            20% { clip-path: inset(60% 0 10% 0); }
+            40% { clip-path: inset(40% 0 50% 0); }
+            60% { clip-path: inset(80% 0 5% 0); }
+            80% { clip-path: inset(10% 0 70% 0); }
+            100% { clip-path: inset(30% 0 20% 0); }
+        }
+        @keyframes glitch-anim-2 {
+            0% { clip-path: inset(10% 0 60% 0); }
+            20% { clip-path: inset(30% 0 20% 0); }
+            40% { clip-path: inset(70% 0 10% 0); }
+            60% { clip-path: inset(20% 0 50% 0); }
+            80% { clip-path: inset(90% 0 5% 0); }
+            100% { clip-path: inset(50% 0 30% 0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="glitch">BLACK MARKET SOFTWARE</h1>
+    <h2>Die mächtige Chronik</h2>
+
+    <p>Einst wütete das Chaos in unseren Archiven. Hackerangriffe, verwaiste ZIP-Dateien und der dunkle Magier <span class="highlight">Hackor der Unbarmherzige</span> brachten unser Reich an den Rand des Abgrunds.</p>
+    <p>Doch diese Zeiten sind vorbei. Unter der Führung von Lord Black von Market haben wir eine neue Ära der Sicherheit und Automatisierung eingeläutet!</p>
+
+    <div class="features">
+        <div class="feature-box">
+            <div class="feature-title">Git Strategie</div>
+            <p>Geordnete Branches, Pull Requests und saubere Historien. Das Chaos hat hier keinen Platz mehr.</p>
+        </div>
+        <div class="feature-box">
+            <div class="feature-title">Automatisierung</div>
+            <p>Der Fluch der Vergänglichkeit hält unsere Archive frei von verwaisten Issues und totem Code.</p>
+        </div>
+        <div class="feature-box">
+            <div class="feature-title">Sicherheit</div>
+            <p>Geheimnisse bleiben geheim. Dank strikter Ignore-Regeln und modernster Wächter-Bots (Dependabot).</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Black Market Software GmbH | by Julian Wenger
+    </div>
+</div>
+
+</body>
+</html>
